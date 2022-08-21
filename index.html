@@ -129,19 +129,32 @@
               <!-- per player input -->
               <label for="player">Per Player</label>
               <input id="per-player" type="text" name="player" />
-              <button class="btn">Calculate</button>
-              <h3>Player Expenses $<span id="player-expenses">0</span></h3>
+              <button id="calculate-btn" class="btn">Calculate</button>
+              <h3>
+                Player Expenses
+                <span class="orange-span"
+                  >$<span id="player-expenses">0</span></span
+                >
+              </h3>
             </div>
             <div class="other-expenses">
               <!-- manager -->
               <label for="manager">Manager</label>
               <input id="manager" type="text" name="manager" />
               <br />
+
               <!-- coach -->
               <label for="coach">Coach</label>
               <input id="coach" type="text" name="coach" />
-              <button class="btn">Calculate Total</button>
-              <h3>Total $<span id="total-expenses">0</span></h3>
+
+              <!-- calculate total button -->
+              <button id="calculate-total" class="btn">Calculate Total</button>
+              <h3>
+                Total
+                <span class="orange-span"
+                  >$<span id="total-expenses">0</span></span
+                >
+              </h3>
             </div>
           </div>
         </div>
@@ -149,5 +162,6 @@
     </main>
     <!-- script -->
     <script src="./js/addPlayers.js"></script>
+    <script src="./js/budget.js"></script>
   </body>
 </html>

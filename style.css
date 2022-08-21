@@ -159,6 +159,11 @@ header {
   font-size: 1.2rem;
 }
 
+.orange-span {
+  color: #ff5e19;
+  margin-left: 18px;
+}
+
 /* media query */
 @media screen and (max-width: 1220px) {
   .all-players {
