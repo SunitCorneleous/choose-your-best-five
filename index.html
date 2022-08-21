@@ -124,9 +124,20 @@
           <div class="selected-players">
             <h2>Budget</h2>
             <div class="per-player">
+              <!-- per player input -->
               <label for="player">Per Player</label>
               <input id="per-player" type="text" name="player" />
               <button class="btn">Calculate</button>
+              <h3>Player Expenses $<span id="player-expenses">0</span></h3>
+            </div>
+            <div class="other-expenses">
+              <label for="manager">Manager</label>
+              <input id="manager" type="text" name="manager" />
+              <br />
+              <label for="coach">Coach</label>
+              <input id="coach" type="text" name="coach" />
+              <button class="btn">Calculate Total</button>
+              <h3>Total $<span id="total-expenses">0</span></h3>
             </div>
           </div>
         </div>
