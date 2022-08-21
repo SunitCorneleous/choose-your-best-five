@@ -5,7 +5,132 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Best Five</title>
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Manrope:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <!-- custom css -->
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- this is the header section-->
+    <header>
+      <div class="header-container">
+        <h1>Pick Your Favourite Five</h1>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quibusdam,
+          repellat alias deserunt quis nostrum maxime reiciendis, expedita ad
+          voluptatibus porro eveniet, quas eligendi facilis adipisci? Molestias
+          maxime ab, ut tenetur dolores nesciunt delectus aspernatur eaque at
+        </p>
+      </div>
+    </header>
+    <!-- this is the main section -->
+    <main>
+      <section class="main-container">
+        <!-- all players -->
+        <div class="all-players">
+          <!-- player card -->
+          <div class="player-card">
+            <img src="./images/player-1.png" alt="player-1" />
+            <div class="player-details">
+              <h3>Lionel Messi</h3>
+              <div><span>36 Goals</span> | <span>120 Assist</span></div>
+              <button class="btn select-btn">Select</button>
+            </div>
+          </div>
+          <!-- player card -->
+          <div class="player-card">
+            <img src="./images/player-2.png" alt="player-1" />
+            <div class="player-details">
+              <h3>Neymar Jr</h3>
+              <div><span>36 Goals</span> | <span>120 Assist</span></div>
+              <button class="btn select-btn">Select</button>
+            </div>
+          </div>
+          <!-- player card -->
+          <div class="player-card">
+            <img src="./images/player-3.png" alt="player-1" />
+            <div class="player-details">
+              <h3>Kylian Mbappé</h3>
+              <div><span>36 Goals</span> | <span>120 Assist</span></div>
+              <button class="btn select-btn">Select</button>
+            </div>
+          </div>
+          <!-- player card -->
+          <div class="player-card">
+            <img src="./images/player-4.png" alt="player-1" />
+            <div class="player-details">
+              <h3>Vítor Machado</h3>
+              <div><span>36 Goals</span> | <span>120 Assist</span></div>
+              <button class="btn select-btn">Select</button>
+            </div>
+          </div>
+          <!-- player card -->
+          <div class="player-card">
+            <img src="./images/player-5.png" alt="player-1" />
+            <div class="player-details">
+              <h3>Sergio Ramos</h3>
+              <div><span>36 Goals</span> | <span>120 Assist</span></div>
+              <button class="btn select-btn">Select</button>
+            </div>
+          </div>
+          <!-- player card -->
+          <div class="player-card">
+            <img src="./images/player-6.png" alt="player-1" />
+            <div class="player-details">
+              <h3>Renato Sanches</h3>
+              <div><span>36 Goals</span> | <span>120 Assist</span></div>
+              <button class="btn select-btn">Select</button>
+            </div>
+          </div>
+          <!-- player card -->
+          <div class="player-card">
+            <img src="./images/player-7.jpg" alt="player-1" />
+            <div class="player-details">
+              <h3>Keylor Navas</h3>
+              <div><span>36 Goals</span> | <span>120 Assist</span></div>
+              <button class="btn select-btn">Select</button>
+            </div>
+          </div>
+          <!-- player card -->
+          <div class="player-card">
+            <img src="./images/player-8.jpg" alt="player-1" />
+            <div class="player-details">
+              <h3>Marco Verratti</h3>
+              <div><span>36 Goals</span> | <span>120 Assist</span></div>
+              <button class="btn select-btn">Select</button>
+            </div>
+          </div>
+          <!-- player card -->
+          <div class="player-card">
+            <img src="./images/player-9.jpg" alt="player-1" />
+            <div class="player-details">
+              <h3>Leandro Paredes</h3>
+              <div><span>36 Goals</span> | <span>120 Assist</span></div>
+              <button class="btn select-btn">Select</button>
+            </div>
+          </div>
+        </div>
+        <div class="details">
+          <div class="selected-players">
+            <h2>Selected V</h2>
+            <ol id="selected-players"></ol>
+          </div>
+
+          <div class="selected-players">
+            <h2>Budget</h2>
+            <div class="per-player">
+              <label for="player">Per Player</label>
+              <input id="per-player" type="text" name="player" />
+              <button class="btn">Calculate</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>

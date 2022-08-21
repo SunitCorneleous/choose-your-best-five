@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-color: rgb(177, 177, 177);
+  font-family: "Manrope", sans-serif;
+}
+
+/* header styling */
+header {
+  text-align: center;
+  background-color: #17192e;
+}
+
+.header-container h1 {
+  font-size: 3.5rem;
+  font-family: "Berkshire Swash", cursive;
+  color: #b13543;
+}
+
+.header-container p {
+  color: #fff;
+  margin-top: 20px;
+}
+
+.header-container {
+  margin: 0 auto;
+  max-width: 50%;
+
+  padding: 80px 0;
+}
+
+/* main styling */
+
+.main-container {
+  width: 85%;
+  margin: 10px auto;
+  display: flex;
+
+  padding: 50px 10px;
+}
+
+/* players styling */
+.all-players {
+  width: 75%;
+
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+  gap: 15px;
+}
+
+.details {
+  width: 40%;
+}
+
+.player-card {
+  border: 1px solid #000;
+  width: 240px;
+
+  background-color: rgb(37, 37, 37);
+  color: #fff;
+}
+
+.player-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+.player-details {
+  width: 80%;
+  margin: 10px auto 15px;
+  text-align: center;
+  line-height: 25px;
+}
+
+.player-details h3 {
+  font-size: 1.3rem;
+}
+
+.player-details div {
+  font-size: 1rem;
+  color: rgb(175, 171, 171);
+}
+
+.btn {
+  width: 100%;
+  padding: 8px 20px;
+  margin: 10px 0;
+
+  background-color: #015196;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border: none;
+}
+
+/* details */
+.details {
+  width: 25%;
+}
+
+.selected-players {
+  background-color: rgb(33, 32, 32);
+  min-height: 470px;
+  margin: 0 15px 15px;
+
+  color: #fff;
+}
+
+.selected-players h2 {
+  text-align: center;
+  padding: 28px 0;
+}
+
+.per-player {
+  width: 80%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.per-player input {
+  width: 50%;
+  margin-left: 8px;
+  padding: 3px 2px;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+/* media query */
+@media screen and (max-width: 1220px) {
+  .all-players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .details {
+    width: 55%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .all-players {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details {
+    width: 50%;
+  }
+
+  .selected-players {
+    margin: 25px 0;
+  }
+}
+@media screen and (max-width: 576px) {
+  .all-players {
+    grid-template-columns: repeat(1, 1fr);
+  }
+
+  .main-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .details {
+    width: 50%;
+  }
+
+  .selected-players {
+    margin: 25px 0;
+  }
+}
