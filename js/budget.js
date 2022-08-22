@@ -16,6 +16,7 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
   }
 });
 
+// calculate total expenses
 document
   .getElementById("calculate-total")
   .addEventListener("click", function () {

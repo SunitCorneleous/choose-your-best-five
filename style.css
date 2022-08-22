@@ -191,6 +191,7 @@ footer p {
 }
 
 /* media query */
+/* desktop and large screen */
 @media screen and (max-width: 1312px) {
   .all-players {
     grid-template-columns: repeat(2, 1fr);
@@ -201,6 +202,7 @@ footer p {
   }
 }
 
+/* tablet and medium screen */
 @media screen and (max-width: 992px) {
   .all-players {
     grid-template-columns: repeat(2, 1fr);
@@ -223,6 +225,8 @@ footer p {
     width: 40%;
   }
 }
+
+/* mobile phones and small screen */
 @media screen and (max-width: 688px) {
   .all-players {
     grid-template-columns: repeat(1, 1fr);
