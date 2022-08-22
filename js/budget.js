@@ -8,8 +8,12 @@ document.getElementById("calculate-btn").addEventListener("click", function () {
   // total player expenses
   const totalPlayerCost = perPlayerExpense * playerListLength;
 
-  // set total expenses
-  setElementInnerTextById("player-expenses", totalPlayerCost);
+  if (isNaN(perPlayerExpense)) {
+    alert("Enter valid number");
+  } else {
+    // set total expenses
+    setElementInnerTextById("player-expenses", totalPlayerCost);
+  }
 });
 
 document
@@ -23,6 +27,11 @@ document
 
     const totalExpense = totalPlayer + managerExpense + coachExpense;
 
+    if (isNaN(managerExpense) || isNaN(coachExpense)) {
+      alert("Enter valid number");
+    } else {
+      // set total expenses
+      setElementInnerTextById("total-expenses", totalExpense);
+    }
     // set total expenses
-    setElementInnerTextById("total-expenses", totalExpense);
   });
