@@ -62,6 +62,8 @@ header {
 
   background-color: rgb(37, 37, 37);
   color: #fff;
+
+  margin: 0 auto;
 }
 
 .player-card img {
@@ -105,6 +107,8 @@ header {
 /* details */
 .details {
   width: 25%;
+  display: flex;
+  flex-direction: column;
 }
 
 .selected-players {
@@ -164,8 +168,20 @@ header {
   margin-left: 18px;
 }
 
+/* this is the footer section */
+footer {
+  background-color: #17192e;
+  color: rgb(221, 193, 193);
+}
+
+footer h3 {
+  text-align: center;
+  padding: 100px;
+  font-size: 2rem;
+}
+
 /* media query */
-@media screen and (max-width: 1220px) {
+@media screen and (max-width: 1312px) {
   .all-players {
     grid-template-columns: repeat(2, 1fr);
   }
@@ -175,9 +191,10 @@ header {
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .all-players {
     grid-template-columns: repeat(2, 1fr);
+    width: 85%;
   }
 
   .main-container {
@@ -186,14 +203,17 @@ header {
   }
 
   .details {
-    width: 50%;
+    width: 100%;
+    flex-direction: row;
+    justify-content: space-around;
   }
 
   .selected-players {
     margin: 25px 0;
+    width: 40%;
   }
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 688px) {
   .all-players {
     grid-template-columns: repeat(1, 1fr);
   }
@@ -203,11 +223,18 @@ header {
     align-items: center;
   }
 
+  .selected-players {
+    margin: 25px 0;
+  }
+
   .details {
-    width: 50%;
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
   }
 
   .selected-players {
     margin: 25px 0;
+    width: 80%;
   }
 }
